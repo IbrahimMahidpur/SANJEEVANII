@@ -1,0 +1,503 @@
+[
+  {
+    "id": "doctor_001",
+    "name": "Dr. Rajesh Sharma",
+    "specialization": "General Physician",
+    "hospitalId": "hospital_001",
+    "hospitalName": "Bombay Hospital, Indore",
+    "phone": "+91-731-6789012",
+    "email": "dr.rajesh@bombayhospital.in",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:00",
+            "available": true
+          },
+          {
+            "startTime": "11:00",
+            "endTime": "11:30",
+            "available": true
+          },
+          {
+            "startTime": "16:00",
+            "endTime": "16:30",
+            "available": true
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "17:00",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "slots": [
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:00",
+            "available": true
+          },
+          {
+            "startTime": "11:00",
+            "endTime": "11:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:00",
+            "available": true
+          },
+          {
+            "startTime": "16:00",
+            "endTime": "16:30",
+            "available": true
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "17:00",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:00",
+            "available": true
+          },
+          {
+            "startTime": "11:00",
+            "endTime": "11:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "slots": [
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:00",
+            "available": true
+          },
+          {
+            "startTime": "16:00",
+            "endTime": "16:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "slots": [
+          {
+            "startTime": "09:00",
+            "endTime": "09:30",
+            "available": true
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:00",
+            "available": true
+          },
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "consultationFee": 500,
+    "experience": 15,
+    "qualifications": [
+      "MBBS",
+      "MD (Medicine)"
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "doctor_002",
+    "name": "Dr. Priya Verma",
+    "specialization": "Cardiologist",
+    "hospitalId": "hospital_002",
+    "hospitalName": "CHL Hospital, Indore",
+    "phone": "+91-731-7890123",
+    "email": "dr.priya@chlhospital.in",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:30",
+            "available": true
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "15:00",
+            "available": true
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:30",
+            "available": true
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "15:00",
+            "available": true
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "slots": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:30",
+            "available": true
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "15:00",
+            "available": true
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:30",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "consultationFee": 1200,
+    "experience": 12,
+    "qualifications": [
+      "MBBS",
+      "MD (Cardiology)",
+      "DM (Cardiology)"
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "doctor_003",
+    "name": "Dr. Amit Patel",
+    "specialization": "Pediatrician",
+    "hospitalId": "hospital_001",
+    "hospitalName": "Bombay Hospital, Indore",
+    "phone": "+91-731-8901234",
+    "email": "dr.amit@bombayhospital.in",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          {
+            "startTime": "11:00",
+            "endTime": "11:30",
+            "available": true
+          },
+          {
+            "startTime": "11:30",
+            "endTime": "12:00",
+            "available": true
+          },
+          {
+            "startTime": "17:00",
+            "endTime": "17:30",
+            "available": true
+          },
+          {
+            "startTime": "17:30",
+            "endTime": "18:00",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "slots": [
+          {
+            "startTime": "11:00",
+            "endTime": "11:30",
+            "available": true
+          },
+          {
+            "startTime": "11:30",
+            "endTime": "12:00",
+            "available": true
+          },
+          {
+            "startTime": "17:00",
+            "endTime": "17:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          {
+            "startTime": "11:00",
+            "endTime": "11:30",
+            "available": true
+          },
+          {
+            "startTime": "11:30",
+            "endTime": "12:00",
+            "available": true
+          },
+          {
+            "startTime": "17:00",
+            "endTime": "17:30",
+            "available": true
+          },
+          {
+            "startTime": "17:30",
+            "endTime": "18:00",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "slots": [
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:00",
+            "available": true
+          },
+          {
+            "startTime": "11:00",
+            "endTime": "11:30",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "consultationFee": 600,
+    "experience": 10,
+    "qualifications": [
+      "MBBS",
+      "MD (Pediatrics)"
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "doctor_004",
+    "name": "Dr. Sneha Gupta",
+    "specialization": "Dermatologist",
+    "hospitalId": "hospital_003",
+    "hospitalName": "Apollo Hospital, Indore",
+    "phone": "+91-731-9012345",
+    "email": "dr.sneha@apollohospital.in",
+    "availability": [
+      {
+        "day": "Tuesday",
+        "slots": [
+          {
+            "startTime": "15:00",
+            "endTime": "15:30",
+            "available": true
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "16:00",
+            "available": true
+          },
+          {
+            "startTime": "16:00",
+            "endTime": "16:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          {
+            "startTime": "15:00",
+            "endTime": "15:30",
+            "available": true
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "16:00",
+            "available": true
+          },
+          {
+            "startTime": "16:00",
+            "endTime": "16:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "slots": [
+          {
+            "startTime": "11:00",
+            "endTime": "11:30",
+            "available": true
+          },
+          {
+            "startTime": "11:30",
+            "endTime": "12:00",
+            "available": true
+          },
+          {
+            "startTime": "12:00",
+            "endTime": "12:30",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "consultationFee": 800,
+    "experience": 8,
+    "qualifications": [
+      "MBBS",
+      "MD (Dermatology)"
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "doctor_005",
+    "name": "Dr. Vikram Singh",
+    "specialization": "Orthopedic Surgeon",
+    "hospitalId": "hospital_002",
+    "hospitalName": "CHL Hospital, Indore",
+    "phone": "+91-731-0123456",
+    "email": "dr.vikram@chlhospital.in",
+    "availability": [
+      {
+        "day": "Monday",
+        "slots": [
+          {
+            "startTime": "09:00",
+            "endTime": "09:30",
+            "available": true
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:00",
+            "available": true
+          },
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          {
+            "startTime": "09:00",
+            "endTime": "09:30",
+            "available": true
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:00",
+            "available": true
+          },
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          }
+        ]
+      },
+      {
+        "day": "Friday",
+        "slots": [
+          {
+            "startTime": "09:00",
+            "endTime": "09:30",
+            "available": true
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:00",
+            "available": true
+          },
+          {
+            "startTime": "10:00",
+            "endTime": "10:30",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "consultationFee": 1000,
+    "experience": 18,
+    "qualifications": [
+      "MBBS",
+      "MS (Orthopedics)"
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,47 @@
+{
+    "llm": {
+        "disable_chat_history": false,
+        "model": "llama3.2:latest",
+        "system_message": "You are June, a friendly voice assistant. You automatically adapt to user's language - respond in English, Hindi, Hinglish, or Bengali based on what user speaks. Keep responses natural and conversational."
+    },
+    "stt": {
+        "model": "google",
+        "generation_args": {
+            "credentials": "C:\\Users\\imahi\\Downloads\\vaani-474822-49ec0963711e.json",
+            "primary_language": "hi-IN",
+            "alternative_language_codes": ["en-IN", "bn-IN", "en-US"],
+            "multilang_mode": "auto_detect",
+            "enable_automatic_punctuation": true,
+            "use_enhanced": true,
+            "sample_rate_hertz": 24000,
+            "model_choice": "default",
+            "speech_contexts": {
+                "phrases": [
+                    "kya", "hai", "hain", "ho", "hoon", "tha", "thi", "the",
+                    "main", "mujhe", "tumhe", "aap", "tum", "uska", "mera", "tera",
+                    "kar", "karo", "karna", "kiya", "karega", "karenge",
+                    "chahiye", "chahie", "sakta", "sakti", "sakte",
+                    "batao", "btao", "bata", "suno", "dekho", "do", "de",
+                    "nahi", "nhi", "na", "haan", "han", "ji",
+                    "theek", "thik", "achha", "acha", "sahi",
+                    "help", "kaise", "kahan", "kab", "kyun", "kyu",
+                    "joke", "sunao", "bolo", "pata", "samajh"
+                ],
+                "boost": 20.0
+            }
+        }
+    },
+    "tts": {
+        "model": "google",
+        "generation_args": {
+            "credentials": "C:\\Users\\imahi\\Downloads\\vaani-474822-49ec0963711e.json",
+            "language_code": "en-IN",
+            "voice_name": "en-IN-Neural2-D",
+            "ssml_gender": "FEMALE",
+            "speaking_rate": 1.0,
+            "pitch": 0.0,
+            "sample_rate_hertz": 24000,
+            "audio_encoding": "LINEAR16"
+        }
+    }
+}

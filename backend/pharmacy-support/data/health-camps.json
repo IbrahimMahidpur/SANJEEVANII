@@ -1,0 +1,149 @@
+[
+  {
+    "id": "camp_001",
+    "name": "Free Health Checkup Camp - Vijay Nagar",
+    "type": "checkup",
+    "organizer": "Indore Municipal Corporation",
+    "location": {
+      "lat": 22.7532,
+      "lng": 75.8937,
+      "address": "Community Hall, Scheme 54, Vijay Nagar, Indore, MP 452010"
+    },
+    "date": "2025-12-15",
+    "startTime": "09:00",
+    "endTime": "17:00",
+    "services": [
+      "Blood Pressure Check",
+      "Blood Sugar Test",
+      "BMI Measurement",
+      "General Physician Consultation",
+      "Free Medicines"
+    ],
+    "registrationRequired": false,
+    "contactPhone": "+91-731-2525252",
+    "source": "manual",
+    "createdAt": "2025-12-01T00:00:00.000Z"
+  },
+  {
+    "id": "camp_002",
+    "name": "COVID-19 Vaccination Drive - Palasia",
+    "type": "vaccine",
+    "organizer": "District Health Department",
+    "location": {
+      "lat": 22.7243,
+      "lng": 75.8727,
+      "address": "Government School, RNT Marg, Palasia, Indore, MP 452001"
+    },
+    "date": "2025-12-10",
+    "startTime": "10:00",
+    "endTime": "16:00",
+    "services": [
+      "COVID-19 Vaccination (Covishield/Covaxin)",
+      "Booster Dose Available",
+      "Age 18+"
+    ],
+    "registrationRequired": true,
+    "contactPhone": "+91-731-2424242",
+    "source": "manual",
+    "createdAt": "2025-12-01T00:00:00.000Z"
+  },
+  {
+    "id": "camp_003",
+    "name": "Eye Checkup Camp - Rajwada",
+    "type": "checkup",
+    "organizer": "Lions Club Indore",
+    "location": {
+      "lat": 22.7195,
+      "lng": 75.8577,
+      "address": "Near Rajwada, AB Road, Indore, MP 452002"
+    },
+    "date": "2025-12-20",
+    "startTime": "08:00",
+    "endTime": "14:00",
+    "services": [
+      "Eye Vision Test",
+      "Cataract Screening",
+      "Free Spectacles for Eligible",
+      "Ophthalmologist Consultation"
+    ],
+    "registrationRequired": false,
+    "contactPhone": "+91-731-2626262",
+    "source": "manual",
+    "createdAt": "2025-12-01T00:00:00.000Z"
+  },
+  {
+    "id": "camp_004",
+    "name": "Women's Health Camp - Sapna Sangeeta",
+    "type": "checkup",
+    "organizer": "Rotary Club Indore",
+    "location": {
+      "lat": 22.7284,
+      "lng": 75.8794,
+      "address": "Community Center, Sapna Sangeeta Road, Indore, MP 452001"
+    },
+    "date": "2025-12-18",
+    "startTime": "09:00",
+    "endTime": "15:00",
+    "services": [
+      "Gynecologist Consultation",
+      "Breast Cancer Screening",
+      "Anemia Testing",
+      "Nutritional Counseling",
+      "Free Iron Supplements"
+    ],
+    "registrationRequired": true,
+    "contactPhone": "+91-731-2727272",
+    "source": "manual",
+    "createdAt": "2025-12-01T00:00:00.000Z"
+  },
+  {
+    "id": "camp_005",
+    "name": "Diabetes Awareness Camp - MG Road",
+    "type": "checkup",
+    "organizer": "Diabetes Foundation of India",
+    "location": {
+      "lat": 22.7156,
+      "lng": 75.8650,
+      "address": "Treasure Island Mall, MG Road, Indore, MP 452001"
+    },
+    "date": "2025-12-12",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "services": [
+      "HbA1c Test",
+      "Blood Sugar Monitoring",
+      "Diabetologist Consultation",
+      "Diet Planning",
+      "Free Glucometer for Diabetics"
+    ],
+    "registrationRequired": false,
+    "contactPhone": "+91-731-2828282",
+    "source": "manual",
+    "createdAt": "2025-12-01T00:00:00.000Z"
+  },
+  {
+    "id": "camp_006",
+    "name": "Pediatric Vaccination Camp - Bhawarkuan",
+    "type": "vaccine",
+    "organizer": "Government of Madhya Pradesh",
+    "location": {
+      "lat": 22.6987,
+      "lng": 75.8721,
+      "address": "Primary Health Center, Bhawarkuan, Indore, MP 452001"
+    },
+    "date": "2025-12-08",
+    "startTime": "09:00",
+    "endTime": "13:00",
+    "services": [
+      "Routine Childhood Vaccinations",
+      "Polio Drops",
+      "MMR Vaccine",
+      "DPT Vaccine",
+      "Age 0-5 years"
+    ],
+    "registrationRequired": false,
+    "contactPhone": "+91-731-2929292",
+    "source": "manual",
+    "createdAt": "2025-12-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,117 @@
+{
+    "llm": {
+        "disable_chat_history": false,
+        "model": "llama3.2:latest",
+        "system_message": "You are June, a highly intelligent multilingual voice assistant fluent in English, Hindi, and Hinglish (code-mixed Hindi-English). You have the following capabilities:\n\n1. LANGUAGE ADAPTATION: Automatically detect and respond in the same language/style the user speaks:\n   - Pure English → Respond in fluent English\n   - Pure Hindi (Devanagari) → Respond in natural Hindi\n   - Hinglish (mixed) → Respond in natural Hinglish matching user's mixing style\n   - Code-switching → Match the user's code-switching pattern\n\n2. RESPONSE STYLE:\n   - Keep responses concise, natural, and conversational\n   - For Hinglish: Use natural mixing like Indians speak (e.g., 'Main help kar sakta hoon', 'Ye feature bohot useful hai')\n   - Avoid overly formal language\n   - Use contextually appropriate terms (e.g., 'mobile' not 'cellphone' in Indian context)\n\n3. CULTURAL AWARENESS:\n   - Understand Indian context, idioms, and references\n   - Use appropriate units (lakhs/crores for Indian users)\n   - Be aware of Indian festivals, places, and cultural references\n\n4. TECHNICAL ASSISTANCE:\n   - Explain technical concepts in simple language\n   - Provide step-by-step guidance when needed\n   - Adapt explanation complexity to user's language proficiency\n\nIMPORTANT: Never mention that you're switching languages. Just naturally respond in the user's language/style."
+    },
+    "stt": {
+        "model": "google",
+        "generation_args": {
+            "credentials": "C:\\Users\\imahi\\Downloads\\vaani-474822-49ec0963711e.json",
+            "primary_language": "en-IN",
+            "alternative_language_codes": ["hi-IN", "en-US"],
+            "multilang_mode": "multi_pass_detection",
+            "enable_automatic_punctuation": true,
+            "use_enhanced": true,
+            "sample_rate_hertz": 24000,
+            "model_choice": "latest_long",
+            "enable_word_time_offsets": true,
+            "enable_speaker_diarization": false,
+            "max_alternatives": 1,
+            "profanity_filter": false,
+            "speech_contexts": {
+                "phrases": [
+                    "Hey June",
+                    "Ok June",
+                    "Okay June",
+                    "Suno June",
+                    "June",
+                    "kya haal hai",
+                    "kaise ho",
+                    "kaisi ho",
+                    "theek hai",
+                    "thik hai",
+                    "achha hai",
+                    "acha hai",
+                    "samajh gaya",
+                    "samajh gayi",
+                    "samjha",
+                    "help chahiye",
+                    "madad chahiye",
+                    "batao",
+                    "btao",
+                    "bolo",
+                    "suno",
+                    "dekho",
+                    "kya hua",
+                    "kya ho gaya",
+                    "kya baat hai",
+                    "bata do",
+                    "bata de",
+                    "kaise kare",
+                    "kaise karu",
+                    "kaise karna hai",
+                    "kya karu",
+                    "kya karna hai",
+                    "mujhe batao",
+                    "please help",
+                    "please bata",
+                    "please batao",
+                    "thank you",
+                    "thanks",
+                    "dhanyavaad",
+                    "shukriya",
+                    "theek se samjha",
+                    "samajh aa gaya",
+                    "ho gaya",
+                    "nahi samjha",
+                    "nahi samajh aaya",
+                    "dubara batao",
+                    "phir se batao",
+                    "ek baar aur",
+                    "Hindi mein",
+                    "English mein",
+                    "Hinglish mein",
+                    "kya matlab",
+                    "matlab kya hai",
+                    "iska matlab"
+                ],
+                "boost": 20.0
+            },
+            "audio_channel_count": 1
+        }
+    },
+    "tts": {
+        "model": "google",
+        "generation_args": {
+            "credentials": "C:\\Users\\imahi\\Downloads\\vaani-474822-49ec0963711e.json",
+            "language_code": "en-IN",
+            "voice_name": "en-IN-Neural2-D",
+            "ssml_gender": "FEMALE",
+            "speaking_rate": 0.95,
+            "pitch": 0.5,
+            "volume_gain_db": 2.0,
+            "sample_rate_hertz": 24000,
+            "audio_encoding": "LINEAR16",
+            "effects_profile_id": ["small-bluetooth-speaker-class-device"],
+            "auto_language_switching": true,
+            "voice_preferences": {
+                "hi-IN": {
+                    "voice_name": "hi-IN-Neural2-A",
+                    "speaking_rate": 0.90,
+                    "pitch": 0.0
+                },
+                "en-IN": {
+                    "voice_name": "en-IN-Neural2-D",
+                    "speaking_rate": 0.95,
+                    "pitch": 0.5
+                },
+                "en-US": {
+                    "voice_name": "en-US-Neural2-F",
+                    "speaking_rate": 0.95,
+                    "pitch": 0.0
+                }
+            }
+        }
+    }
+}

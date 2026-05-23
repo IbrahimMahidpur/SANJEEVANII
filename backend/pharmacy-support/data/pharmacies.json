@@ -1,0 +1,322 @@
+[
+  {
+    "id": "pharmacy_indore_001",
+    "name": "Apollo Pharmacy - Vijay Nagar",
+    "address": "Shop 12, Scheme 54, Vijay Nagar, Indore, Madhya Pradesh 452010",
+    "location": {
+      "lat": 22.7532,
+      "lng": 75.8937
+    },
+    "phone": "+91-731-4567890",
+    "email": "vijay.nagar@apollopharmacy.in",
+    "openingHours": {
+      "monday": "08:00-22:00",
+      "tuesday": "08:00-22:00",
+      "wednesday": "08:00-22:00",
+      "thursday": "08:00-22:00",
+      "friday": "08:00-22:00",
+      "saturday": "08:00-22:00",
+      "sunday": "09:00-21:00"
+    },
+    "inventory": [
+      {
+        "id": "med_001",
+        "name": "Paracetamol 500mg",
+        "quantity": 500,
+        "price": 15,
+        "expiryDate": "2025-12-31",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_002",
+        "name": "Amoxicillin 250mg",
+        "quantity": 200,
+        "price": 120,
+        "expiryDate": "2025-10-15",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_003",
+        "name": "Cetirizine 10mg",
+        "quantity": 300,
+        "price": 25,
+        "expiryDate": "2026-03-20",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_004",
+        "name": "Azithromycin 500mg",
+        "quantity": 150,
+        "price": 180,
+        "expiryDate": "2025-11-30",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_005",
+        "name": "Omeprazole 20mg",
+        "quantity": 250,
+        "price": 45,
+        "expiryDate": "2026-01-15",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      }
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "pharmacy_indore_002",
+    "name": "MedPlus - Palasia",
+    "address": "15, RNT Marg, Palasia, Indore, Madhya Pradesh 452001",
+    "location": {
+      "lat": 22.7243,
+      "lng": 75.8727
+    },
+    "phone": "+91-731-2345678",
+    "email": "palasia@medplus.in",
+    "openingHours": {
+      "monday": "07:00-23:00",
+      "tuesday": "07:00-23:00",
+      "wednesday": "07:00-23:00",
+      "thursday": "07:00-23:00",
+      "friday": "07:00-23:00",
+      "saturday": "07:00-23:00",
+      "sunday": "08:00-22:00"
+    },
+    "inventory": [
+      {
+        "id": "med_006",
+        "name": "Paracetamol 500mg",
+        "quantity": 400,
+        "price": 12,
+        "expiryDate": "2025-12-31",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_007",
+        "name": "Metformin 500mg",
+        "quantity": 180,
+        "price": 95,
+        "expiryDate": "2026-02-28",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_008",
+        "name": "Atorvastatin 10mg",
+        "quantity": 220,
+        "price": 85,
+        "expiryDate": "2025-09-30",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_009",
+        "name": "Ciprofloxacin 500mg",
+        "quantity": 160,
+        "price": 140,
+        "expiryDate": "2026-04-10",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_010",
+        "name": "Azithromycin 500mg",
+        "quantity": 100,
+        "price": 175,
+        "expiryDate": "2025-11-30",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      }
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "pharmacy_indore_003",
+    "name": "Wellness Forever - AB Road",
+    "address": "Shop 45, AB Road, Near Rajwada, Indore, Madhya Pradesh 452002",
+    "location": {
+      "lat": 22.7195,
+      "lng": 75.8577
+    },
+    "phone": "+91-731-3456789",
+    "email": "abroad@wellnessforever.in",
+    "openingHours": {
+      "monday": "08:00-22:00",
+      "tuesday": "08:00-22:00",
+      "wednesday": "08:00-22:00",
+      "thursday": "08:00-22:00",
+      "friday": "08:00-22:00",
+      "saturday": "08:00-22:00",
+      "sunday": "09:00-21:00"
+    },
+    "inventory": [
+      {
+        "id": "med_011",
+        "name": "Cetirizine 10mg",
+        "quantity": 350,
+        "price": 22,
+        "expiryDate": "2026-03-20",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_012",
+        "name": "Amoxicillin 250mg",
+        "quantity": 180,
+        "price": 115,
+        "expiryDate": "2025-10-15",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_013",
+        "name": "Ibuprofen 400mg",
+        "quantity": 280,
+        "price": 35,
+        "expiryDate": "2026-05-25",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_014",
+        "name": "Pantoprazole 40mg",
+        "quantity": 200,
+        "price": 55,
+        "expiryDate": "2025-12-20",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_015",
+        "name": "Metformin 500mg",
+        "quantity": 150,
+        "price": 90,
+        "expiryDate": "2026-02-28",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      }
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "pharmacy_indore_004",
+    "name": "Netmeds Pharmacy - Sapna Sangeeta",
+    "address": "Ground Floor, Sapna Sangeeta Road, Indore, Madhya Pradesh 452001",
+    "location": {
+      "lat": 22.7284,
+      "lng": 75.8794
+    },
+    "phone": "+91-731-4567123",
+    "email": "indore@netmeds.com",
+    "openingHours": {
+      "monday": "09:00-21:00",
+      "tuesday": "09:00-21:00",
+      "wednesday": "09:00-21:00",
+      "thursday": "09:00-21:00",
+      "friday": "09:00-21:00",
+      "saturday": "09:00-21:00",
+      "sunday": "10:00-20:00"
+    },
+    "inventory": [
+      {
+        "id": "med_016",
+        "name": "Paracetamol 500mg",
+        "quantity": 600,
+        "price": 14,
+        "expiryDate": "2025-12-31",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_017",
+        "name": "Dolo 650mg",
+        "quantity": 450,
+        "price": 28,
+        "expiryDate": "2026-01-31",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_018",
+        "name": "Crocin Advance",
+        "quantity": 320,
+        "price": 32,
+        "expiryDate": "2026-02-15",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_019",
+        "name": "Azithromycin 500mg",
+        "quantity": 120,
+        "price": 185,
+        "expiryDate": "2025-11-30",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_020",
+        "name": "Montelukast 10mg",
+        "quantity": 140,
+        "price": 165,
+        "expiryDate": "2026-06-30",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      }
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "pharmacy_indore_005",
+    "name": "1mg Pharmacy - Treasure Island",
+    "address": "Treasure Island Mall, MG Road, Indore, Madhya Pradesh 452001",
+    "location": {
+      "lat": 22.7156,
+      "lng": 75.8650
+    },
+    "phone": "+91-731-5678901",
+    "email": "indore.ti@1mg.com",
+    "openingHours": {
+      "monday": "10:00-22:00",
+      "tuesday": "10:00-22:00",
+      "wednesday": "10:00-22:00",
+      "thursday": "10:00-22:00",
+      "friday": "10:00-22:00",
+      "saturday": "10:00-22:00",
+      "sunday": "10:00-22:00"
+    },
+    "inventory": [
+      {
+        "id": "med_021",
+        "name": "Omeprazole 20mg",
+        "quantity": 280,
+        "price": 42,
+        "expiryDate": "2026-01-15",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_022",
+        "name": "Atorvastatin 10mg",
+        "quantity": 190,
+        "price": 82,
+        "expiryDate": "2025-09-30",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_023",
+        "name": "Levocet rizine 5mg",
+        "quantity": 240,
+        "price": 38,
+        "expiryDate": "2026-04-20",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_024",
+        "name": "Ciprofloxacin 500mg",
+        "quantity": 170,
+        "price": 135,
+        "expiryDate": "2026-04-10",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      },
+      {
+        "id": "med_025",
+        "name": "Amoxicillin 250mg",
+        "quantity": 210,
+        "price": 118,
+        "expiryDate": "2025-10-15",
+        "lastUpdated": "2025-12-04T00:00:00.000Z"
+      }
+    ],
+    "verified": true,
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  }
+]

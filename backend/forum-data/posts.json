@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1765126775824",
+    "title": "Test Post",
+    "content": "rtufgk",
+    "author": {
+      "name": "You",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=You",
+      "role": "Member"
+    },
+    "date": "2025-12-07T16:59:35.825Z",
+    "likes": 0,
+    "views": 0,
+    "comments": [],
+    "tags": [],
+    "category": "General"
+  },
+  {
+    "id": "1",
+    "title": "Best remedies for common cold?",
+    "content": "I have been feeling under the weather lately. Does anyone have good home remedies?",
+    "author": {
+      "name": "Sarah J.",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+      "role": "Member"
+    },
+    "date": "2025-12-07T16:54:30.346Z",
+    "likes": 16,
+    "views": 342,
+    "comments": [
+      {
+        "id": "c1",
+        "author": "Dr. Smith",
+        "content": "Stay hydrated and get plenty of rest.",
+        "date": "2025-12-07T16:54:30.346Z",
+        "likes": 5
+      }
+    ],
+    "tags": [
+      "Health",
+      "Remedies"
+    ],
+    "category": "General Health"
+  },
+  {
+    "id": "2",
+    "title": "Ayurveda vs Modern Medicine",
+    "content": "I am curious about the communitys thoughts on integrating Ayurveda with modern treatments.",
+    "author": {
+      "name": "Raj Kumar",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Raj",
+      "role": "Moderator"
+    },
+    "date": "2025-12-06T16:54:30.346Z",
+    "likes": 45,
+    "views": 1205,
+    "comments": [],
+    "tags": [
+      "Ayurveda",
+      "Discussion"
+    ],
+    "category": "Alternative Medicine"
+  },
+  {
+    "id": "3",
+    "title": "Review of Local Pharmacies in Delhi",
+    "content": "Sharing my experience with 24x7 pharmacies in South Delhi. Very helpful service!",
+    "author": {
+      "name": "Priya M.",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
+      "role": "Member"
+    },
+    "date": "2025-12-05T16:54:30.346Z",
+    "likes": 28,
+    "views": 560,
+    "comments": [],
+    "tags": [
+      "Reviews",
+      "Delhi"
+    ],
+    "category": "Local Resources"
+  }
+]

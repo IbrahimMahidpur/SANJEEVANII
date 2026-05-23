@@ -1,0 +1,25 @@
+{
+  "llm": {
+    "disable_chat_history": false,
+    "model": "llama3:latest"
+  },
+  "stt": {
+    "model": "google",
+    "device": "cpu",
+    "generation_args": {
+      "credentials": "C:\\Users\\imahi\\Downloads\\vaani-474822-49ec0963711e.json",
+      "language_code": "en-US"
+    }
+  },
+  "tts": {
+    "model": "google",
+    "device": "cpu",
+    "generation_args": {
+      "credentials": "C:\\Users\\imahi\\Downloads\\vaani-474822-49ec0963711e.json",
+      "file_path": "out.wav",
+      "language_code": "en-US",
+      "ssml_gender": "FEMALE",
+      "sample_rate_hertz": 24000
+    }
+  }
+}

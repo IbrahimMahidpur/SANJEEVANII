@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pharmacy Support - Indore</title>
+  <meta http-equiv="refresh" content="0; url=http://localhost:3001?lat=22.7196&lon=75.8577&city=Indore">
+</head>
+
+<body>
+  <h2>Redirecting to Pharmacy Support with Indore location...</h2>
+  <script>
+    // Set Indore location in localStorage
+    localStorage.setItem('userLocation', JSON.stringify({
+      lat: 22.7196,
+      lon: 75.8577,
+      city: 'Indore',
+      state: 'Madhya Pradesh'
+    }));
+
+    // Redirect
+    window.location.href = 'http://localhost:3001';
+  </script>
+</body>
+
+</html>

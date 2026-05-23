@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Your Actual Location</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            display: none;
+        }
+        .result.show {
+            display: block;
+        }
+        .coords {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+        .info {
+            color: #666;
+            margin: 10px 0;
+        }
+        .loading {
+            display: none;
+            margin: 20px 0;
+        }
+        .loading.show {
+            display: block;
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗺️ Get Your Actual Location</h1>
+        <p>Click the button below to detect your real location with high accuracy</p>
+        
+        <button id="getLocation" onclick="getAccurateLocation()">
+            📍 Get My Location
+        </button>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Getting your accurate location...</p>
+            <p style="font-size: 12px; color: #999;">This may take a few seconds for GPS accuracy</p>
+        </div>
+        
+        <div class="result" id="result">
+            <h3>✅ Your Actual Location:</h3>
+            <div class="coords" id="coords"></div>
+            <div class="info" id="accuracy"></div>
+            <div class="info" id="city"></div>
+            <button onclick="openPharmacy()">Open Pharmacy Support</button>
+            <button onclick="copyCoords()">Copy Coordinates</button>
+        </div>
+    </div>
+
+    <script>
+        let currentLocation = null;
+
+        async function getAccurateLocation() {
+            const btn = document.getElementById('getLocation');
+            const loading = document.getElementById('loading');
+            const result = document.getElementById('result');
+            
+            btn.disabled = true;
+            loading.classList.add('show');
+            result.classList.remove('show');
+
+            if (!navigator.geolocation) {
+                alert('Geolocation is not supported by your browser');
+                btn.disabled = false;
+                loading.classList.remove('show');
+                return;
+            }
+
+            // Try high-accuracy GPS
+            navigator.geolocation.getCurrentPosition(
+                async (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    const accuracy = position.coords.accuracy;
+                    
+                    currentLocation = { lat, lon };
+                    
+                    document.getElementById('coords').textContent = 
+                        `${lat.toFixed(6)}, ${lon.toFixed(6)}`;
+                    document.getElementById('accuracy').textContent = 
+                        `Accuracy: ${accuracy.toFixed(0)} meters`;
+                    
+                    // Get city name from coordinates
+                    try {
+                        const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
+                        const data = await response.json();
+                        const city = data.address.city || data.address.town || data.address.village || 'Unknown';
+                        const state = data.address.state || '';
+                        document.getElementById('city').textContent = 
+                            `📍 ${city}, ${state}`;
+                    } catch (error) {
+                        document.getElementById('city').textContent = 'City lookup failed';
+                    }
+                    
+                    loading.classList.remove('show');
+                    result.classList.add('show');
+                    btn.disabled = false;
+                },
+                async (error) => {
+                    console.error('GPS Error:', error);
+                    
+                    // Fallback to IP-based location
+                    try {
+                        const response = await fetch('https://ipapi.co/json/');
+                        const data = await response.json();
+                        
+                        currentLocation = { lat: data.latitude, lon: data.longitude };
+                        
+                        document.getElementById('coords').textContent = 
+                            `${data.latitude.toFixed(6)}, ${data.longitude.toFixed(6)}`;
+                        document.getElementById('accuracy').textContent = 
+                            `Method: IP-based (approximate)`;
+                        document.getElementById('city').textContent = 
+                            `📍 ${data.city}, ${data.region}`;
+                        
+                        loading.classList.remove('show');
+                        result.classList.add('show');
+                    } catch (ipError) {
+                        alert('Could not get location: ' + error.message);
+                    }
+                    
+                    btn.disabled = false;
+                    loading.classList.remove('show');
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 15000,
+                    maximumAge: 0
+                }
+            );
+        }
+
+        function openPharmacy() {
+            if (currentLocation) {
+                // Store location in localStorage
+                localStorage.setItem('userLocation', JSON.stringify(currentLocation));
+                // Open pharmacy support
+                window.open('http://localhost:3001', '_blank');
+            }
+        }
+
+        function copyCoords() {
+            if (currentLocation) {
+                const text = `${currentLocation.lat}, ${currentLocation.lon}`;
+                navigator.clipboard.writeText(text);
+                alert('Coordinates copied to clipboard!');
+            }
+        }
+
+        // Auto-detect on page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const btn = document.getElementById('getLocation');
+                btn.click();
+            }, 500);
+        });
+    </script>
+</body>
+</html>
