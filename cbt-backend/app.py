@@ -1,3 +1,7 @@
+# Load environment variables from .env file BEFORE any Google Cloud imports
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
@@ -104,11 +108,39 @@ except Exception as e:
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Set Google Cloud Credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "vaani-474822-36de07e0981f.json"
-)
+# ---------------------------------------------------------------------------
+# Google Cloud Credentials — read ONLY from the environment (never hardcoded)
+# ---------------------------------------------------------------------------
+# Set GOOGLE_APPLICATION_CREDENTIALS in your shell, in .env, or in your
+# deployment secrets.  See cbt-backend/.env.example for the expected format.
+_creds_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "")
+if not _creds_path:
+    print("\n" + "="*60)
+    print(" [FATAL] GOOGLE_APPLICATION_CREDENTIALS is not set.")
+    print("="*60)
+    print("\nTo fix this, create a file cbt-backend/.env containing:")
+    print("\n    GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/service-account.json")
+    print("\nOr export it in your shell before starting the server:")
+    print("\n    export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/service-account.json")
+    print("\nDownload the JSON key from:")
+    print("    https://console.cloud.google.com/iam-admin/serviceaccounts")
+    print("="*60 + "\n")
+    raise SystemExit(1)
+
+if not os.path.isfile(_creds_path):
+    print("\n" + "="*60)
+    print(" [FATAL] Credentials file not found.")
+    print("="*60)
+    print(f"\n  GOOGLE_APPLICATION_CREDENTIALS is set to: {_creds_path}")
+    print("  But that file does not exist on this machine.")
+    print("\nSteps to fix:")
+    print("  1. Download your service account JSON from Google Cloud Console.")
+    print("  2. Place it somewhere safe (e.g. ~/secrets/).")
+    print("  3. Update GOOGLE_APPLICATION_CREDENTIALS in cbt-backend/.env to the correct path.")
+    print("="*60 + "\n")
+    raise SystemExit(1)
+
+logger.info(f"[Auth] Using Google credentials: {_creds_path}")
 
 # Initialize global instances at module level
 print("\n" + "="*60)

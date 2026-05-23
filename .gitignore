@@ -42,6 +42,9 @@ vaani-*.json
 *credentials*.json
 *.pem
 *.key
+# Catch any JSON key files dumped directly in the repo root or talking_june root
+/*.json
+/talking_june/Avatar/*.json
 
 # ============================================================
 # Large Data / Model Files
