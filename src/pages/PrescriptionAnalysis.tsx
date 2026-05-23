@@ -45,7 +45,19 @@ export default function PrescriptionAnalysis() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to analyze prescription');
+        let errorMsg = 'Failed to analyze prescription';
+        try {
+          const errorData = await response.json();
+          if (errorData.error) {
+            errorMsg = errorData.error;
+            if (errorData.details) {
+              errorMsg += `: ${errorData.details}`;
+            }
+          }
+        } catch (e) {
+          // Fallback if response is not JSON
+        }
+        throw new Error(errorMsg);
       }
 
       const data = await response.json();
